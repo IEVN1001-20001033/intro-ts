@@ -11,10 +11,13 @@ export class Areas{
         this.radio = radio;
     }    
 
-    areaRectangulo():void{
+    areaRectangulo(){
         let areaRect;
         areaRect = this.base * this.altura;
-        console.log(`El área del rectángulo es: ${areaRect}`)
+        
+        //console.log(`El área del rectángulo es: ${areaRect}`)
+        //console.log(areaRect)
+        return areaRect;
        
     }
 
@@ -22,20 +25,23 @@ export class Areas{
         let areaCuadrado;
         areaCuadrado = this.lado * this.lado;
 
-        console.log(`El área del cuadrado es: ${areaCuadrado}`)
+        //console.log(`El área del cuadrado es: ${areaCuadrado}`)
+        return areaCuadrado;
 
     }
 
     areaCirculo(){
         let areaCirc;
         areaCirc = 3.1416 * (this.radio *this.radio);
-        console.log(`El área del círculo es: ${areaCirc}`)
+        //console.log(`El área del círculo es: ${areaCirc}`)
+        return areaCirc;
 
     }
 
 }
 
+/*console.log("*******ÁREAS*******");
 const area = new Areas(10, 4, 8, 3);
-area.areaRectangulo();
-area.areaCuadrado();
-area.areaCirculo();
+console.log(`El área del rectángulo es: ${area.areaRectangulo()}`);
+console.log(`El área del rectácuadrado es: ${area.areaCuadrado()}`);
+console.log(`El área del circulo es: ${area.areaCirculo()}`);*/
